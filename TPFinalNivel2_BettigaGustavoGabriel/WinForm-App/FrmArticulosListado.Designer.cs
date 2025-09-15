@@ -34,7 +34,7 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.pbImagenArticulo = new System.Windows.Forms.PictureBox();
+            this.pbImagenListado = new System.Windows.Forms.PictureBox();
             this.btnDetalles = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -44,7 +44,7 @@
             this.lblOperador = new System.Windows.Forms.Label();
             this.lblValor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoArticulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagenArticulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenListado)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvListadoArticulos
@@ -98,13 +98,13 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // pbImagenArticulo
+            // pbImagenListado
             // 
-            this.pbImagenArticulo.Location = new System.Drawing.Point(595, 48);
-            this.pbImagenArticulo.Name = "pbImagenArticulo";
-            this.pbImagenArticulo.Size = new System.Drawing.Size(300, 300);
-            this.pbImagenArticulo.TabIndex = 6;
-            this.pbImagenArticulo.TabStop = false;
+            this.pbImagenListado.Location = new System.Drawing.Point(595, 48);
+            this.pbImagenListado.Name = "pbImagenListado";
+            this.pbImagenListado.Size = new System.Drawing.Size(300, 300);
+            this.pbImagenListado.TabIndex = 6;
+            this.pbImagenListado.TabStop = false;
             // 
             // btnDetalles
             // 
@@ -187,7 +187,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnDetalles);
-            this.Controls.Add(this.pbImagenArticulo);
+            this.Controls.Add(this.pbImagenListado);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
@@ -198,7 +198,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Articulos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoArticulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagenArticulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.PictureBox pbImagenArticulo;
+        private System.Windows.Forms.PictureBox pbImagenListado;
         private System.Windows.Forms.Button btnDetalles;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;

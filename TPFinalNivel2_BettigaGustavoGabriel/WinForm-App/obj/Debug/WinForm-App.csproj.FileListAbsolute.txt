@@ -6,3 +6,9 @@ C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Ni
 C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.pdb
 C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\WinForm-App.exe
 C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.exe
+C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Dominio.dll
+C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Negocio.dll
+C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Dominio.pdb
+C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Negocio.pdb
+C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm_App.FrmArticuloABM.resources
+C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-.FA645943.Up2Date

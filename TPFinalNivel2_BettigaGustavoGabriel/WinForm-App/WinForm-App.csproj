@@ -68,9 +68,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmArticuloABM.resx">
+      <DependentUpon>FrmArticuloABM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmArticulosListado.resx">
       <DependentUpon>FrmArticulosListado.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{f3745844-390a-4ece-b255-80b78a38cd70}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{e61696f9-9932-4e3c-bfe6-6593d9e4de52}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
