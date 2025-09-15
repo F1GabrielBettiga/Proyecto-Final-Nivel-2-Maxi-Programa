@@ -52,12 +52,6 @@
     <Compile Include="FrmArticuloABM.Designer.cs">
       <DependentUpon>FrmArticuloABM.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmArticuloDetalle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmArticuloDetalle.Designer.cs">
-      <DependentUpon>FrmArticuloDetalle.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmArticulosListado.cs">
       <SubType>Form</SubType>
     </Compile>

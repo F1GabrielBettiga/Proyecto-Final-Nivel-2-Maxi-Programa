@@ -79,6 +79,7 @@
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEliminar
             // 
@@ -97,6 +98,7 @@
             this.btnModificar.TabIndex = 5;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // pbImagenListado
             // 
@@ -114,6 +116,7 @@
             this.btnDetalles.TabIndex = 7;
             this.btnDetalles.Text = "Detalles";
             this.btnDetalles.UseVisualStyleBackColor = true;
+            this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
             // 
             // comboBox1
             // 
