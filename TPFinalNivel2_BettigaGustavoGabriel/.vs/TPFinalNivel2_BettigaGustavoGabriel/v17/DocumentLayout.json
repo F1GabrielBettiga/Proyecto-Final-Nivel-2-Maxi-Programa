@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final-nivel-2-maxi-programa\\tpfinalnivel2_bettigagustavogabriel\\dominio\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final-nivel-2-maxi-programa\\tpfinalnivel2_bettigagustavogabriel\\dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final-nivel-2-maxi-programa\\tpfinalnivel2_bettigagustavogabriel\\dominio\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final-nivel-2-maxi-programa\\tpfinalnivel2_bettigagustavogabriel\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final-nivel-2-maxi-programa\\tpfinalnivel2_bettigagustavogabriel\\dominio\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final-nivel-2-maxi-programa\\tpfinalnivel2_bettigagustavogabriel\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Marcas.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Marcas.cs",
-              "RelativeDocumentMoniker": "Dominio\\Marcas.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Marcas.cs",
-              "RelativeToolTip": "Dominio\\Marcas.cs",
+              "Title": "Marca.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Marca.cs",
+              "RelativeDocumentMoniker": "Dominio\\Marca.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Marca.cs",
+              "RelativeToolTip": "Dominio\\Marca.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T19:57:34.008Z",
+              "WhenOpened": "2025-09-15T20:13:58.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Categorias.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Categorias.cs",
-              "RelativeDocumentMoniker": "Dominio\\Categorias.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Categorias.cs",
-              "RelativeToolTip": "Dominio\\Categorias.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Categoria.cs",
+              "RelativeDocumentMoniker": "Dominio\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Categoria.cs",
+              "RelativeToolTip": "Dominio\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T19:57:09.824Z",
+              "WhenOpened": "2025-09-15T20:13:23.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Articulos.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Articulos.cs",
-              "RelativeDocumentMoniker": "Dominio\\Articulos.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Articulos.cs",
-              "RelativeToolTip": "Dominio\\Articulos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Title": "Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Articulo.cs",
+              "RelativeDocumentMoniker": "Dominio\\Articulo.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final-Nivel-2-Maxi-Programa\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Articulo.cs",
+              "RelativeToolTip": "Dominio\\Articulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T19:56:38.799Z",
+              "WhenOpened": "2025-09-15T20:12:34.65Z",
               "EditorCaption": ""
             }
           ]
