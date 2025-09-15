@@ -5,26 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\winform-app\\frmarticuloslistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\frmarticuloslistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\winform-app\\frmarticuloabm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\frmarticuloabm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\winform-app\\frmarticulodetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\frmarticulodetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,32 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmArticuloDetalle.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticuloDetalle.cs",
-              "RelativeDocumentMoniker": "WinForm-App\\FrmArticuloDetalle.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticuloDetalle.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinForm-App\\FrmArticuloDetalle.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:32:30.288Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmArticuloABM.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticuloABM.cs",
-              "RelativeDocumentMoniker": "WinForm-App\\FrmArticuloABM.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticuloABM.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinForm-App\\FrmArticuloABM.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:28:44.18Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -69,45 +25,8 @@
               "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticulosListado.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinForm-App\\FrmArticulosListado.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:28:21.155Z",
+              "WhenOpened": "2025-09-15T20:50:08.769Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Marca.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Marca.cs",
-              "RelativeDocumentMoniker": "Dominio\\Marca.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Marca.cs",
-              "RelativeToolTip": "Dominio\\Marca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:13:58.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Categoria.cs",
-              "RelativeDocumentMoniker": "Dominio\\Categoria.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Categoria.cs",
-              "RelativeToolTip": "Dominio\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:13:23.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Articulo.cs",
-              "RelativeDocumentMoniker": "Dominio\\Articulo.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Articulo.cs",
-              "RelativeToolTip": "Dominio\\Articulo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:12:34.65Z"
             }
           ]
         }
