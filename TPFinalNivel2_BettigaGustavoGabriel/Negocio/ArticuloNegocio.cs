@@ -17,7 +17,7 @@ namespace Negocio
 
 			try 
 			{
-				datos.setearConsulta("Select A.Id, A.Codigo, A.Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, A.ImagenUrl, A.Precio From ARTICULOS A, CATEGORIAS C, MARCAS M Where A.IdCategoria = C.Id and A.IdMarca = M.Id");
+				datos.setearConsulta("Select A.Id, A.Codigo, A.Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, A.ImagenUrl, A.Precio,C.Id IdCategoria, M.Id IdMarca From ARTICULOS A, CATEGORIAS C, MARCAS M  Where A.IdCategoria = C.Id and A.IdMarca = M.Id");
 				datos.ejecutarLectura();
 
 				while (datos.Lector.Read())
@@ -30,10 +30,12 @@ namespace Negocio
 					aux.descripcion = (string)datos.Lector["Descripcion"];
 
 					aux.marca = new Marca();
-					aux.marca.descripcion = (string)datos.Lector["Marca"];
+					aux.marca.id = (int)datos.Lector["IdMarca"];
+                    aux.marca.descripcion = (string)datos.Lector["Marca"];
 
 					aux.categoria = new Categoria();
-					aux.categoria.descripcion = (string)datos.Lector["Categoria"];
+					aux.categoria.id = (int)datos.Lector["IdCategoria"];
+                    aux.categoria.descripcion = (string)datos.Lector["Categoria"];
 
 					if (!(datos.Lector["ImagenUrl"] is DBNull))
 					{
@@ -66,5 +68,36 @@ namespace Negocio
 
         }
 
+		public void agregarArticulo (Articulo artNuevo)
+		{
+			AccesoDatos datos = new AccesoDatos();
+
+			try
+			{
+				datos.setearConsulta("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, ImagenUrl, Precio) values (@Codigo, @Nombre, @Descripcion, @IdMarca, @IdCategoria, @ImagenUrl, @Precio)");
+				datos.setearParametro ("@Codigo", artNuevo.codigo);
+				datos.setearParametro("@Nombre", artNuevo.nombre);
+				datos.setearParametro("@Descripcion", artNuevo.descripcion);
+				datos.setearParametro("@IdMarca", artNuevo.marca.id);
+				datos.setearParametro("@IdCategoria", artNuevo.categoria.id);
+				datos.setearParametro("@ImagenUrl", artNuevo.imagenUrl);
+				datos.setearParametro("@Precio", artNuevo.precio);
+				datos.ejecutarAccion();
+
+            }
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+            finally
+			{
+				datos.cerrarConexion();
+			}
+
+
+
+
+
+        }
 	}
 }

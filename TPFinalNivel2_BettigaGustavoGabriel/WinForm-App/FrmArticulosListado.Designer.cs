@@ -63,12 +63,12 @@
             this.dgvListadoArticulos.Name = "dgvListadoArticulos";
             this.dgvListadoArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListadoArticulos.Size = new System.Drawing.Size(548, 315);
-            this.dgvListadoArticulos.TabIndex = 0;
+            this.dgvListadoArticulos.TabIndex = 3;
             this.dgvListadoArticulos.SelectionChanged += new System.EventHandler(this.dgvListadoArticulos_SelectionChanged);
             // 
             // txtbFiltroRapido
             // 
-            this.txtbFiltroRapido.Location = new System.Drawing.Point(72, 6);
+            this.txtbFiltroRapido.Location = new System.Drawing.Point(77, 6);
             this.txtbFiltroRapido.Name = "txtbFiltroRapido";
             this.txtbFiltroRapido.Size = new System.Drawing.Size(190, 20);
             this.txtbFiltroRapido.TabIndex = 1;
@@ -76,10 +76,10 @@
             // lblFiltroRapido
             // 
             this.lblFiltroRapido.AutoSize = true;
-            this.lblFiltroRapido.Location = new System.Drawing.Point(-3, 9);
+            this.lblFiltroRapido.Location = new System.Drawing.Point(2, 9);
             this.lblFiltroRapido.Name = "lblFiltroRapido";
             this.lblFiltroRapido.Size = new System.Drawing.Size(69, 13);
-            this.lblFiltroRapido.TabIndex = 2;
+            this.lblFiltroRapido.TabIndex = 0;
             this.lblFiltroRapido.Text = "Filtro Rapido:";
             // 
             // btnAgregar
@@ -87,7 +87,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(3, 12);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 3;
+            this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -97,7 +97,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(3, 70);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
@@ -106,7 +106,7 @@
             this.btnModificar.Location = new System.Drawing.Point(3, 41);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar.TabIndex = 5;
+            this.btnModificar.TabIndex = 1;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
@@ -124,7 +124,7 @@
             this.btnDetalles.Location = new System.Drawing.Point(84, 33);
             this.btnDetalles.Name = "btnDetalles";
             this.btnDetalles.Size = new System.Drawing.Size(75, 39);
-            this.btnDetalles.TabIndex = 7;
+            this.btnDetalles.TabIndex = 3;
             this.btnDetalles.Text = "Detalles";
             this.btnDetalles.UseVisualStyleBackColor = true;
             this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
@@ -135,7 +135,7 @@
             this.comboBox1.Location = new System.Drawing.Point(76, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 8;
+            this.comboBox1.TabIndex = 0;
             // 
             // comboBox2
             // 
@@ -143,14 +143,14 @@
             this.comboBox2.Location = new System.Drawing.Point(76, 49);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 9;
+            this.comboBox2.TabIndex = 1;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(76, 76);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 10;
+            this.textBox1.TabIndex = 2;
             // 
             // lblFiltroAvanzado
             // 
@@ -158,7 +158,7 @@
             this.lblFiltroAvanzado.Location = new System.Drawing.Point(96, 1);
             this.lblFiltroAvanzado.Name = "lblFiltroAvanzado";
             this.lblFiltroAvanzado.Size = new System.Drawing.Size(80, 13);
-            this.lblFiltroAvanzado.TabIndex = 11;
+            this.lblFiltroAvanzado.TabIndex = 3;
             this.lblFiltroAvanzado.Text = "Filtro Avanzado";
             // 
             // lblBuscarEn
@@ -167,7 +167,7 @@
             this.lblBuscarEn.Location = new System.Drawing.Point(12, 25);
             this.lblBuscarEn.Name = "lblBuscarEn";
             this.lblBuscarEn.Size = new System.Drawing.Size(58, 13);
-            this.lblBuscarEn.TabIndex = 12;
+            this.lblBuscarEn.TabIndex = 4;
             this.lblBuscarEn.Text = "Buscar en:";
             // 
             // lblOperador
@@ -176,7 +176,7 @@
             this.lblOperador.Location = new System.Drawing.Point(12, 52);
             this.lblOperador.Name = "lblOperador";
             this.lblOperador.Size = new System.Drawing.Size(54, 13);
-            this.lblOperador.TabIndex = 13;
+            this.lblOperador.TabIndex = 5;
             this.lblOperador.Text = "Operador:";
             // 
             // lblValor
@@ -185,7 +185,7 @@
             this.lblValor.Location = new System.Drawing.Point(32, 79);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(34, 13);
-            this.lblValor.TabIndex = 14;
+            this.lblValor.TabIndex = 6;
             this.lblValor.Text = "Valor:";
             // 
             // pnlFiltroAvanzado
@@ -200,7 +200,7 @@
             this.pnlFiltroAvanzado.Location = new System.Drawing.Point(360, 369);
             this.pnlFiltroAvanzado.Name = "pnlFiltroAvanzado";
             this.pnlFiltroAvanzado.Size = new System.Drawing.Size(200, 96);
-            this.pnlFiltroAvanzado.TabIndex = 15;
+            this.pnlFiltroAvanzado.TabIndex = 2;
             // 
             // pnlBotones
             // 
@@ -211,16 +211,16 @@
             this.pnlBotones.Location = new System.Drawing.Point(12, 370);
             this.pnlBotones.Name = "pnlBotones";
             this.pnlBotones.Size = new System.Drawing.Size(200, 95);
-            this.pnlBotones.TabIndex = 16;
+            this.pnlBotones.TabIndex = 1;
             // 
             // pnlFiltroRapido
             // 
             this.pnlFiltroRapido.Controls.Add(this.txtbFiltroRapido);
             this.pnlFiltroRapido.Controls.Add(this.lblFiltroRapido);
-            this.pnlFiltroRapido.Location = new System.Drawing.Point(287, 12);
+            this.pnlFiltroRapido.Location = new System.Drawing.Point(283, 13);
             this.pnlFiltroRapido.Name = "pnlFiltroRapido";
             this.pnlFiltroRapido.Size = new System.Drawing.Size(273, 29);
-            this.pnlFiltroRapido.TabIndex = 17;
+            this.pnlFiltroRapido.TabIndex = 0;
             // 
             // FrmArticulosListado
             // 

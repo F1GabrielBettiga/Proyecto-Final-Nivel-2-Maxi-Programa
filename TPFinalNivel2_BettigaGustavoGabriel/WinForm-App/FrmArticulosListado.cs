@@ -33,14 +33,29 @@ namespace WinForm_App
         {
             FrmArticuloABM Alta = new FrmArticuloABM();
             Alta.ShowDialog();
+            CargarGrilla();
 
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            FrmArticuloABM Modificar = new FrmArticuloABM();
-            Modificar.Text = "Modificar Artículo";
-            Modificar.ShowDialog();
+            if (dgvListadoArticulos.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccioná un Articulo Primero");
+                return;
+            }
+            else
+            {
+                Articulo artSeleccionado;
+                artSeleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+                FrmArticuloABM Modificar = new FrmArticuloABM(artSeleccionado);
+                Modificar.ShowDialog();
+                CargarGrilla();
+
+            }
+
+
+
         }
 
         private void btnDetalles_Click(object sender, EventArgs e)
