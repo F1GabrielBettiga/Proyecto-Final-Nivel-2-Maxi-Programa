@@ -12,3 +12,17 @@ C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Ni
 C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Negocio.pdb
 C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm_App.FrmArticuloABM.resources
 C:\Users\Gabriel Bettiga\Documents\Curso Maxi Programa\Nivel 2\Proyecto-Final-Nivel-2-Maxi-Programa\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-.FA645943.Up2Date
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\WinForm-App.exe
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\WinForm-App.pdb
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Dominio.dll
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Negocio.dll
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Dominio.pdb
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Negocio.pdb
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.csproj.AssemblyReference.cache
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm_App.FrmArticuloABM.resources
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm_App.FrmArticulosListado.resources
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.csproj.GenerateResource.cache
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-.FA645943.Up2Date
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.exe
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.pdb

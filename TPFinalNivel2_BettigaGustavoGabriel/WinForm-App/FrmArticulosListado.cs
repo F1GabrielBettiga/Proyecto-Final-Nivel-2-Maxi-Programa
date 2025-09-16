@@ -48,7 +48,7 @@ namespace WinForm_App
             {
                 Articulo artSeleccionado;
                 artSeleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
-                FrmArticuloABM Modificar = new FrmArticuloABM(artSeleccionado);
+                FrmArticuloABM Modificar = new FrmArticuloABM(artSeleccionado,1);
                 Modificar.ShowDialog();
                 CargarGrilla();
 
@@ -58,11 +58,52 @@ namespace WinForm_App
 
         }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvListadoArticulos.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccioná un Articulo Primero");
+                return;
+            }
+            else
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                Articulo artSeleccionado;
+                artSeleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+
+                DialogResult result = MessageBox.Show("¿Está seguro que desea eliminar el artículo? " + artSeleccionado.nombre,"Eliminando", MessageBoxButtons.YesNo,MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                if (result == DialogResult.Yes)
+                {
+                    negocio.eliminarArticulo(artSeleccionado.id);
+                    MessageBox.Show("Eliminido Correctamente");
+                    CargarGrilla();
+
+                }
+                
+
+            }
+
+        }
+
         private void btnDetalles_Click(object sender, EventArgs e)
         {
             FrmArticuloABM Detalles = new FrmArticuloABM();
-            Detalles.Text = "Detalles del Artículo";
-            Detalles.ShowDialog();
+            if (dgvListadoArticulos.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccioná un Articulo Primero");
+                return;
+            }
+            else
+            {
+                Articulo artSeleccionado;   
+                artSeleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+                Detalles = new FrmArticuloABM(artSeleccionado, 2);
+                Detalles.Text = "Detalles del Artículo";
+                Detalles.ShowDialog();
+
+            }
+
+
         }
 
         private void dgvListadoArticulos_SelectionChanged(object sender, EventArgs e)

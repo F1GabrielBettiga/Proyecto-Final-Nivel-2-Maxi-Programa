@@ -20,12 +20,32 @@ namespace WinForm_App
             InitializeComponent();
         }
 
-        public FrmArticuloABM(Articulo ar)
+        public FrmArticuloABM(Articulo ar, int Modo)
         {
-            InitializeComponent();
-            art = ar;
-            Text = "Modificar Artículo";
+            if (Modo == 1)
+            {
+                InitializeComponent();
+                art = ar;
+                Text = "Modificar Artículo";
+            }
+            else
+            {
+                InitializeComponent();
+                art = ar;
+                Text = "Detalle de Artículo";
+                btnGuardar.Visible = false;
+                txtCodigo.Enabled = false;
+                txtNombre.Enabled = false;
+                txtDescripcion.Enabled = false;
+                txtPrecio.Enabled = false;
+                txtUrlImagen.Enabled = false;
+                cbMarca.Enabled = false;
+                cbCategoria.Enabled = false;
+                btnCancelar.Text = "Cerrar";
+            }
         }
+
+
 
         private void FrmArticuloABM_Load(object sender, EventArgs e)
         {
@@ -65,14 +85,19 @@ namespace WinForm_App
                 if (art == null)
                 {
                     art = new Articulo();
+                    art = cargarArticulo();
+                }
+                else
+                {
+                    art = cargarArticulo(art.id);
                 }
 
-                art = cargarArticulo();
+
 
                 if (art.id != 0)
                 {
-                    //negocio.modificarArticulo(art);
-                    MessageBox.Show("Modificado Exitosamente");
+                    negocio.modificarArticulo(art);
+                    MessageBox.Show("Modificado Exitosamente ");
                     Close();
                 }
                 else
@@ -99,9 +124,16 @@ namespace WinForm_App
             Close();
         }
 
-        private Articulo cargarArticulo()
-        { 
+        private Articulo cargarArticulo(int id = -1)
+        {
             Articulo articulo = new Articulo();
+
+            if (id != -1)
+            {
+                //Si viene un id, es porque se esta modificando
+                articulo.id = id;
+            }
+   
             articulo.codigo = txtCodigo.Text;
             articulo.nombre = txtNombre.Text;
             articulo.descripcion = txtDescripcion.Text;

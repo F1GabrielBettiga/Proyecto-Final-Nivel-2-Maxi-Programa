@@ -55,6 +55,8 @@
             // 
             // dgvListadoArticulos
             // 
+            this.dgvListadoArticulos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvListadoArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListadoArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListadoArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -62,15 +64,18 @@
             this.dgvListadoArticulos.MultiSelect = false;
             this.dgvListadoArticulos.Name = "dgvListadoArticulos";
             this.dgvListadoArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListadoArticulos.Size = new System.Drawing.Size(548, 315);
+            this.dgvListadoArticulos.Size = new System.Drawing.Size(802, 315);
             this.dgvListadoArticulos.TabIndex = 3;
             this.dgvListadoArticulos.SelectionChanged += new System.EventHandler(this.dgvListadoArticulos_SelectionChanged);
             // 
             // txtbFiltroRapido
             // 
+            this.txtbFiltroRapido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtbFiltroRapido.Location = new System.Drawing.Point(77, 6);
             this.txtbFiltroRapido.Name = "txtbFiltroRapido";
-            this.txtbFiltroRapido.Size = new System.Drawing.Size(190, 20);
+            this.txtbFiltroRapido.Size = new System.Drawing.Size(444, 20);
             this.txtbFiltroRapido.TabIndex = 1;
             // 
             // lblFiltroRapido
@@ -84,9 +89,12 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(3, 12);
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAgregar.Location = new System.Drawing.Point(3, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(75, 46);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -94,18 +102,25 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(3, 70);
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminar.Location = new System.Drawing.Point(3, 107);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(75, 46);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(3, 41);
+            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnModificar.Location = new System.Drawing.Point(3, 55);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.Size = new System.Drawing.Size(75, 46);
             this.btnModificar.TabIndex = 1;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -113,7 +128,8 @@
             // 
             // pbImagenListado
             // 
-            this.pbImagenListado.Location = new System.Drawing.Point(616, 48);
+            this.pbImagenListado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbImagenListado.Location = new System.Drawing.Point(870, 48);
             this.pbImagenListado.Name = "pbImagenListado";
             this.pbImagenListado.Size = new System.Drawing.Size(269, 315);
             this.pbImagenListado.TabIndex = 6;
@@ -121,9 +137,12 @@
             // 
             // btnDetalles
             // 
-            this.btnDetalles.Location = new System.Drawing.Point(84, 33);
+            this.btnDetalles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDetalles.Location = new System.Drawing.Point(102, 55);
             this.btnDetalles.Name = "btnDetalles";
-            this.btnDetalles.Size = new System.Drawing.Size(75, 39);
+            this.btnDetalles.Size = new System.Drawing.Size(75, 46);
             this.btnDetalles.TabIndex = 3;
             this.btnDetalles.Text = "Detalles";
             this.btnDetalles.UseVisualStyleBackColor = true;
@@ -131,31 +150,43 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(76, 22);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(178, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // comboBox2
             // 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(76, 49);
+            this.comboBox2.Location = new System.Drawing.Point(76, 70);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(178, 21);
             this.comboBox2.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(76, 76);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(76, 108);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.Size = new System.Drawing.Size(178, 20);
             this.textBox1.TabIndex = 2;
             // 
             // lblFiltroAvanzado
             // 
+            this.lblFiltroAvanzado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFiltroAvanzado.AutoSize = true;
-            this.lblFiltroAvanzado.Location = new System.Drawing.Point(96, 1);
+            this.lblFiltroAvanzado.Location = new System.Drawing.Point(94, 6);
             this.lblFiltroAvanzado.Name = "lblFiltroAvanzado";
             this.lblFiltroAvanzado.Size = new System.Drawing.Size(80, 13);
             this.lblFiltroAvanzado.TabIndex = 3;
@@ -163,8 +194,11 @@
             // 
             // lblBuscarEn
             // 
+            this.lblBuscarEn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBuscarEn.AutoSize = true;
-            this.lblBuscarEn.Location = new System.Drawing.Point(12, 25);
+            this.lblBuscarEn.Location = new System.Drawing.Point(8, 25);
             this.lblBuscarEn.Name = "lblBuscarEn";
             this.lblBuscarEn.Size = new System.Drawing.Size(58, 13);
             this.lblBuscarEn.TabIndex = 4;
@@ -172,8 +206,11 @@
             // 
             // lblOperador
             // 
+            this.lblOperador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOperador.AutoSize = true;
-            this.lblOperador.Location = new System.Drawing.Point(12, 52);
+            this.lblOperador.Location = new System.Drawing.Point(12, 73);
             this.lblOperador.Name = "lblOperador";
             this.lblOperador.Size = new System.Drawing.Size(54, 13);
             this.lblOperador.TabIndex = 5;
@@ -181,8 +218,11 @@
             // 
             // lblValor
             // 
+            this.lblValor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(32, 79);
+            this.lblValor.Location = new System.Drawing.Point(32, 111);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(34, 13);
             this.lblValor.TabIndex = 6;
@@ -197,9 +237,9 @@
             this.pnlFiltroAvanzado.Controls.Add(this.textBox1);
             this.pnlFiltroAvanzado.Controls.Add(this.lblBuscarEn);
             this.pnlFiltroAvanzado.Controls.Add(this.lblFiltroAvanzado);
-            this.pnlFiltroAvanzado.Location = new System.Drawing.Point(360, 369);
+            this.pnlFiltroAvanzado.Location = new System.Drawing.Point(557, 369);
             this.pnlFiltroAvanzado.Name = "pnlFiltroAvanzado";
-            this.pnlFiltroAvanzado.Size = new System.Drawing.Size(200, 96);
+            this.pnlFiltroAvanzado.Size = new System.Drawing.Size(257, 166);
             this.pnlFiltroAvanzado.TabIndex = 2;
             // 
             // pnlBotones
@@ -210,23 +250,25 @@
             this.pnlBotones.Controls.Add(this.btnEliminar);
             this.pnlBotones.Location = new System.Drawing.Point(12, 370);
             this.pnlBotones.Name = "pnlBotones";
-            this.pnlBotones.Size = new System.Drawing.Size(200, 95);
+            this.pnlBotones.Size = new System.Drawing.Size(273, 153);
             this.pnlBotones.TabIndex = 1;
             // 
             // pnlFiltroRapido
             // 
+            this.pnlFiltroRapido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFiltroRapido.Controls.Add(this.txtbFiltroRapido);
             this.pnlFiltroRapido.Controls.Add(this.lblFiltroRapido);
-            this.pnlFiltroRapido.Location = new System.Drawing.Point(283, 13);
+            this.pnlFiltroRapido.Location = new System.Drawing.Point(284, 13);
             this.pnlFiltroRapido.Name = "pnlFiltroRapido";
-            this.pnlFiltroRapido.Size = new System.Drawing.Size(273, 29);
+            this.pnlFiltroRapido.Size = new System.Drawing.Size(527, 29);
             this.pnlFiltroRapido.TabIndex = 0;
             // 
             // FrmArticulosListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 469);
+            this.ClientSize = new System.Drawing.Size(1151, 576);
             this.Controls.Add(this.pnlFiltroRapido);
             this.Controls.Add(this.pnlBotones);
             this.Controls.Add(this.pnlFiltroAvanzado);
