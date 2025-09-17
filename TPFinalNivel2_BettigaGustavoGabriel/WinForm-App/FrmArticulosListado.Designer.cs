@@ -36,9 +36,9 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.pbImagenListado = new System.Windows.Forms.PictureBox();
             this.btnDetalles = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cboFiltroAvanzadoCampo = new System.Windows.Forms.ComboBox();
+            this.cboFiltroAvanzadoCriterio = new System.Windows.Forms.ComboBox();
+            this.txtFiltroAvanzadoValor = new System.Windows.Forms.TextBox();
             this.lblFiltroAvanzado = new System.Windows.Forms.Label();
             this.lblBuscarEn = new System.Windows.Forms.Label();
             this.lblOperador = new System.Windows.Forms.Label();
@@ -77,6 +77,7 @@
             this.txtbFiltroRapido.Name = "txtbFiltroRapido";
             this.txtbFiltroRapido.Size = new System.Drawing.Size(444, 20);
             this.txtbFiltroRapido.TabIndex = 1;
+            this.txtbFiltroRapido.TextChanged += new System.EventHandler(this.txtbFiltroRapido_TextChanged);
             // 
             // lblFiltroRapido
             // 
@@ -130,8 +131,11 @@
             // 
             this.pbImagenListado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbImagenListado.Location = new System.Drawing.Point(824, 48);
+            this.pbImagenListado.MaximumSize = new System.Drawing.Size(302, 273);
+            this.pbImagenListado.MinimumSize = new System.Drawing.Size(302, 273);
             this.pbImagenListado.Name = "pbImagenListado";
-            this.pbImagenListado.Size = new System.Drawing.Size(315, 315);
+            this.pbImagenListado.Size = new System.Drawing.Size(302, 273);
+            this.pbImagenListado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImagenListado.TabIndex = 6;
             this.pbImagenListado.TabStop = false;
             // 
@@ -148,37 +152,40 @@
             this.btnDetalles.UseVisualStyleBackColor = true;
             this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
             // 
-            // comboBox1
+            // cboFiltroAvanzadoCampo
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cboFiltroAvanzadoCampo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(76, 22);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(178, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cboFiltroAvanzadoCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboFiltroAvanzadoCampo.FormattingEnabled = true;
+            this.cboFiltroAvanzadoCampo.Location = new System.Drawing.Point(76, 22);
+            this.cboFiltroAvanzadoCampo.Name = "cboFiltroAvanzadoCampo";
+            this.cboFiltroAvanzadoCampo.Size = new System.Drawing.Size(178, 21);
+            this.cboFiltroAvanzadoCampo.TabIndex = 0;
+            this.cboFiltroAvanzadoCampo.SelectedIndexChanged += new System.EventHandler(this.cboFiltroAvanzadoCampo_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cboFiltroAvanzadoCriterio
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cboFiltroAvanzadoCriterio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(76, 70);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(178, 21);
-            this.comboBox2.TabIndex = 1;
+            this.cboFiltroAvanzadoCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboFiltroAvanzadoCriterio.FormattingEnabled = true;
+            this.cboFiltroAvanzadoCriterio.Location = new System.Drawing.Point(76, 70);
+            this.cboFiltroAvanzadoCriterio.Name = "cboFiltroAvanzadoCriterio";
+            this.cboFiltroAvanzadoCriterio.Size = new System.Drawing.Size(178, 21);
+            this.cboFiltroAvanzadoCriterio.TabIndex = 1;
             // 
-            // textBox1
+            // txtFiltroAvanzadoValor
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtFiltroAvanzadoValor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(76, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtFiltroAvanzadoValor.Location = new System.Drawing.Point(76, 108);
+            this.txtFiltroAvanzadoValor.Name = "txtFiltroAvanzadoValor";
+            this.txtFiltroAvanzadoValor.Size = new System.Drawing.Size(178, 20);
+            this.txtFiltroAvanzadoValor.TabIndex = 2;
             // 
             // lblFiltroAvanzado
             // 
@@ -230,11 +237,11 @@
             // 
             // pnlFiltroAvanzado
             // 
-            this.pnlFiltroAvanzado.Controls.Add(this.comboBox2);
+            this.pnlFiltroAvanzado.Controls.Add(this.cboFiltroAvanzadoCriterio);
             this.pnlFiltroAvanzado.Controls.Add(this.lblValor);
-            this.pnlFiltroAvanzado.Controls.Add(this.comboBox1);
+            this.pnlFiltroAvanzado.Controls.Add(this.cboFiltroAvanzadoCampo);
             this.pnlFiltroAvanzado.Controls.Add(this.lblOperador);
-            this.pnlFiltroAvanzado.Controls.Add(this.textBox1);
+            this.pnlFiltroAvanzado.Controls.Add(this.txtFiltroAvanzadoValor);
             this.pnlFiltroAvanzado.Controls.Add(this.lblBuscarEn);
             this.pnlFiltroAvanzado.Controls.Add(this.lblFiltroAvanzado);
             this.pnlFiltroAvanzado.Location = new System.Drawing.Point(557, 369);
@@ -299,9 +306,9 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.PictureBox pbImagenListado;
         private System.Windows.Forms.Button btnDetalles;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cboFiltroAvanzadoCampo;
+        private System.Windows.Forms.ComboBox cboFiltroAvanzadoCriterio;
+        private System.Windows.Forms.TextBox txtFiltroAvanzadoValor;
         private System.Windows.Forms.Label lblFiltroAvanzado;
         private System.Windows.Forms.Label lblBuscarEn;
         private System.Windows.Forms.Label lblOperador;

@@ -25,7 +25,9 @@ namespace WinForm_App
         private void FrmArticulosListado_Load(object sender, EventArgs e)
         {
             CargarGrilla();
-            modificarAltoDeFilasDGV(dgvListadoArticulos, 315);
+            
+            // modificarAltoDeFilasDGV(dgvListadoArticulos, 315);
+            cargarFiltroAvanzado();
 
         }
 
@@ -117,9 +119,27 @@ namespace WinForm_App
 
         }
 
-        private void CargarGrilla()
+        private void txtbFiltroRapido_TextChanged(object sender, EventArgs e)
         {
+            List<Articulo> listaFiltrada;
+            string filtro = txtbFiltroRapido.Text;
+            if (filtro != "")
+            {
+                listaFiltrada = listaArticulos.FindAll(x => x.nombre.ToUpper().Contains(filtro.ToUpper()) || x.codigo.ToUpper().Contains(filtro.ToUpper()) || x.descripcion.ToUpper().Contains(filtro.ToUpper()) || x.marca.id.ToString().ToUpper().Contains(filtro.ToUpper()) || x.marca.descripcion.ToUpper().Contains(filtro.ToUpper()) || x.categoria.id.ToString().ToUpper().Contains(filtro.ToUpper()) || x.categoria.descripcion.ToUpper().Contains(filtro.ToUpper()) || x.precio.ToString().ToString().ToUpper().Contains(filtro.ToUpper()));
+            }
+            else
+            {
+                listaFiltrada = listaArticulos;
+            }
             dgvListadoArticulos.DataSource = null;
+            dgvListadoArticulos.DataSource = listaFiltrada;
+            ocultarColumnas();
+            modificarAltoDeFilasDGV(dgvListadoArticulos, 315);
+
+        }
+
+        private void CargarGrilla()
+        { 
             ArticuloNegocio negocio = new ArticuloNegocio();
 
             try
@@ -127,10 +147,15 @@ namespace WinForm_App
                 listaArticulos = negocio.listarTodosLosArticulos();
 
                 dgvListadoArticulos.DataSource = listaArticulos;
+
+                if (dgvListadoArticulos.Rows.Count > 0)
+                {
+                    dgvListadoArticulos.Rows[0].Cells[1].Selected = true;
+
+                }
+
                 ocultarColumnas();
-                cargarImagen(listaArticulos[0].imagenUrl);
-
-
+                
             }
             catch (Exception ex)
             {
@@ -145,13 +170,14 @@ namespace WinForm_App
         {
             try
             {
+                
                 pbImagenListado.Load(imagen);
-                pbImagenListado.SizeMode = PictureBoxSizeMode.StretchImage;
+              
             }
             catch (Exception)
             {
                 pbImagenListado.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
-                pbImagenListado.SizeMode = PictureBoxSizeMode.StretchImage;
+             
             }
         
         }
@@ -177,5 +203,91 @@ namespace WinForm_App
         }
 
 
+
+        private void cargarFiltroAvanzado()
+        { 
+            cboFiltroAvanzadoCampo.Items.Add("Cód Articulo");
+            cboFiltroAvanzadoCampo.Items.Add("Nombre");
+            cboFiltroAvanzadoCampo.Items.Add("Descripción");
+            cboFiltroAvanzadoCampo.Items.Add("Marca");
+            cboFiltroAvanzadoCampo.Items.Add("Categoría");
+            cboFiltroAvanzadoCampo.Items.Add("Precio");
+
+
+        }
+
+        private void cboFiltroAvanzadoCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboFiltroAvanzadoCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Primero selecciona un campo");
+                cboFiltroAvanzadoCampo.SelectedIndex = -1;
+                return;
+            }
+            else
+            {
+                string opcion = cboFiltroAvanzadoCampo.SelectedItem.ToString();
+
+                switch (opcion)
+                {
+                    case "Cód Articulo":
+
+                        cboFiltroAvanzadoCriterio.Items.Clear();
+                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+
+                        break;
+
+                    case "Nombre":
+                        cboFiltroAvanzadoCriterio.Items.Clear();
+                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+                        break;
+
+                    case "Descripción":
+                        cboFiltroAvanzadoCriterio.Items.Clear();
+                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+
+                        break;
+
+                    case "Marca":
+                        cboFiltroAvanzadoCriterio.Items.Clear();
+                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+
+                        break;
+                    case "Categoría":
+                        cboFiltroAvanzadoCriterio.Items.Clear();
+                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+
+                        break;
+                    case "Precio":
+
+                        cboFiltroAvanzadoCriterio.Items.Clear();
+                        cboFiltroAvanzadoCriterio.Items.Add(" Mayor a ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Menor a ");
+                        cboFiltroAvanzadoCriterio.Items.Add(" Igual a ");
+
+                        break;
+
+
+                    default:
+
+                        break;
+
+
+
+                }
+
+
+            }
+        }
     }
 }

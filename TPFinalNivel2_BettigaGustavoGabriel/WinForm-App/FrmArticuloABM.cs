@@ -150,12 +150,12 @@ namespace WinForm_App
             try
             {
                 pbImagenABM.Load(imagen);
-                pbImagenABM.SizeMode = PictureBoxSizeMode.StretchImage;
+                
             }
             catch (Exception)
             {
                 pbImagenABM.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
-                pbImagenABM.SizeMode = PictureBoxSizeMode.StretchImage;
+                
             }
 
         }
