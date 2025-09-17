@@ -129,9 +129,9 @@
             // pbImagenListado
             // 
             this.pbImagenListado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbImagenListado.Location = new System.Drawing.Point(870, 48);
+            this.pbImagenListado.Location = new System.Drawing.Point(824, 48);
             this.pbImagenListado.Name = "pbImagenListado";
-            this.pbImagenListado.Size = new System.Drawing.Size(269, 315);
+            this.pbImagenListado.Size = new System.Drawing.Size(315, 315);
             this.pbImagenListado.TabIndex = 6;
             this.pbImagenListado.TabStop = false;
             // 
