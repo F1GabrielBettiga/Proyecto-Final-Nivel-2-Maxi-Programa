@@ -46,6 +46,7 @@
             this.pnlFiltroAvanzado = new System.Windows.Forms.Panel();
             this.pnlBotones = new System.Windows.Forms.Panel();
             this.pnlFiltroRapido = new System.Windows.Forms.Panel();
+            this.btnBuscarFiltroAvanzado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenListado)).BeginInit();
             this.pnlFiltroAvanzado.SuspendLayout();
@@ -159,9 +160,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboFiltroAvanzadoCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFiltroAvanzadoCampo.FormattingEnabled = true;
-            this.cboFiltroAvanzadoCampo.Location = new System.Drawing.Point(76, 22);
+            this.cboFiltroAvanzadoCampo.Location = new System.Drawing.Point(58, 22);
             this.cboFiltroAvanzadoCampo.Name = "cboFiltroAvanzadoCampo";
-            this.cboFiltroAvanzadoCampo.Size = new System.Drawing.Size(178, 21);
+            this.cboFiltroAvanzadoCampo.Size = new System.Drawing.Size(194, 21);
             this.cboFiltroAvanzadoCampo.TabIndex = 0;
             this.cboFiltroAvanzadoCampo.SelectedIndexChanged += new System.EventHandler(this.cboFiltroAvanzadoCampo_SelectedIndexChanged);
             // 
@@ -172,9 +173,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboFiltroAvanzadoCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFiltroAvanzadoCriterio.FormattingEnabled = true;
-            this.cboFiltroAvanzadoCriterio.Location = new System.Drawing.Point(76, 70);
+            this.cboFiltroAvanzadoCriterio.Location = new System.Drawing.Point(58, 70);
             this.cboFiltroAvanzadoCriterio.Name = "cboFiltroAvanzadoCriterio";
-            this.cboFiltroAvanzadoCriterio.Size = new System.Drawing.Size(178, 21);
+            this.cboFiltroAvanzadoCriterio.Size = new System.Drawing.Size(194, 21);
             this.cboFiltroAvanzadoCriterio.TabIndex = 1;
             // 
             // txtFiltroAvanzadoValor
@@ -182,9 +183,9 @@
             this.txtFiltroAvanzadoValor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFiltroAvanzadoValor.Location = new System.Drawing.Point(76, 108);
+            this.txtFiltroAvanzadoValor.Location = new System.Drawing.Point(58, 108);
             this.txtFiltroAvanzadoValor.Name = "txtFiltroAvanzadoValor";
-            this.txtFiltroAvanzadoValor.Size = new System.Drawing.Size(178, 20);
+            this.txtFiltroAvanzadoValor.Size = new System.Drawing.Size(194, 20);
             this.txtFiltroAvanzadoValor.TabIndex = 2;
             // 
             // lblFiltroAvanzado
@@ -193,7 +194,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFiltroAvanzado.AutoSize = true;
-            this.lblFiltroAvanzado.Location = new System.Drawing.Point(94, 6);
+            this.lblFiltroAvanzado.Location = new System.Drawing.Point(102, 6);
             this.lblFiltroAvanzado.Name = "lblFiltroAvanzado";
             this.lblFiltroAvanzado.Size = new System.Drawing.Size(80, 13);
             this.lblFiltroAvanzado.TabIndex = 3;
@@ -205,7 +206,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBuscarEn.AutoSize = true;
-            this.lblBuscarEn.Location = new System.Drawing.Point(8, 25);
+            this.lblBuscarEn.Location = new System.Drawing.Point(3, 25);
             this.lblBuscarEn.Name = "lblBuscarEn";
             this.lblBuscarEn.Size = new System.Drawing.Size(58, 13);
             this.lblBuscarEn.TabIndex = 4;
@@ -217,7 +218,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOperador.AutoSize = true;
-            this.lblOperador.Location = new System.Drawing.Point(12, 73);
+            this.lblOperador.Location = new System.Drawing.Point(7, 73);
             this.lblOperador.Name = "lblOperador";
             this.lblOperador.Size = new System.Drawing.Size(54, 13);
             this.lblOperador.TabIndex = 5;
@@ -229,7 +230,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(32, 111);
+            this.lblValor.Location = new System.Drawing.Point(27, 111);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(34, 13);
             this.lblValor.TabIndex = 6;
@@ -237,6 +238,7 @@
             // 
             // pnlFiltroAvanzado
             // 
+            this.pnlFiltroAvanzado.Controls.Add(this.btnBuscarFiltroAvanzado);
             this.pnlFiltroAvanzado.Controls.Add(this.cboFiltroAvanzadoCriterio);
             this.pnlFiltroAvanzado.Controls.Add(this.lblValor);
             this.pnlFiltroAvanzado.Controls.Add(this.cboFiltroAvanzadoCampo);
@@ -244,9 +246,9 @@
             this.pnlFiltroAvanzado.Controls.Add(this.txtFiltroAvanzadoValor);
             this.pnlFiltroAvanzado.Controls.Add(this.lblBuscarEn);
             this.pnlFiltroAvanzado.Controls.Add(this.lblFiltroAvanzado);
-            this.pnlFiltroAvanzado.Location = new System.Drawing.Point(557, 369);
+            this.pnlFiltroAvanzado.Location = new System.Drawing.Point(538, 369);
             this.pnlFiltroAvanzado.Name = "pnlFiltroAvanzado";
-            this.pnlFiltroAvanzado.Size = new System.Drawing.Size(257, 166);
+            this.pnlFiltroAvanzado.Size = new System.Drawing.Size(273, 166);
             this.pnlFiltroAvanzado.TabIndex = 2;
             // 
             // pnlBotones
@@ -270,6 +272,16 @@
             this.pnlFiltroRapido.Name = "pnlFiltroRapido";
             this.pnlFiltroRapido.Size = new System.Drawing.Size(527, 29);
             this.pnlFiltroRapido.TabIndex = 0;
+            // 
+            // btnBuscarFiltroAvanzado
+            // 
+            this.btnBuscarFiltroAvanzado.Location = new System.Drawing.Point(105, 140);
+            this.btnBuscarFiltroAvanzado.Name = "btnBuscarFiltroAvanzado";
+            this.btnBuscarFiltroAvanzado.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarFiltroAvanzado.TabIndex = 7;
+            this.btnBuscarFiltroAvanzado.Text = "BUSCAR";
+            this.btnBuscarFiltroAvanzado.UseVisualStyleBackColor = true;
+            this.btnBuscarFiltroAvanzado.Click += new System.EventHandler(this.btnBuscarFiltroAvanzado_Click);
             // 
             // FrmArticulosListado
             // 
@@ -316,5 +328,6 @@
         private System.Windows.Forms.Panel pnlFiltroAvanzado;
         private System.Windows.Forms.Panel pnlBotones;
         private System.Windows.Forms.Panel pnlFiltroRapido;
+        private System.Windows.Forms.Button btnBuscarFiltroAvanzado;
     }
 }

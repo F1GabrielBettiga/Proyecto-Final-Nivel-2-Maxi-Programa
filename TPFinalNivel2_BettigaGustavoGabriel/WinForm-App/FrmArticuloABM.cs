@@ -15,6 +15,7 @@ namespace WinForm_App
     public partial class FrmArticuloABM : Form
     {
         private Articulo art = null;
+        public bool ArticuloEditado { get; private set; }
         public FrmArticuloABM()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace WinForm_App
                 InitializeComponent();
                 art = ar;
                 Text = "Modificar Artículo";
+              
             }
             else
             {
@@ -42,6 +44,7 @@ namespace WinForm_App
                 cbMarca.Enabled = false;
                 cbCategoria.Enabled = false;
                 btnCancelar.Text = "Cerrar";
+                
             }
         }
 
@@ -98,7 +101,9 @@ namespace WinForm_App
                 {
                     negocio.modificarArticulo(art);
                     MessageBox.Show("Modificado Exitosamente ");
+                    ArticuloEditado = true;
                     Close();
+
                 }
                 else
                 {
@@ -164,5 +169,9 @@ namespace WinForm_App
         {
             cargarImagen(txtUrlImagen.Text);
         }
+
+
+
+
     }
 }

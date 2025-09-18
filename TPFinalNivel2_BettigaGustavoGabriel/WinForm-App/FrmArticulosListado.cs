@@ -26,7 +26,7 @@ namespace WinForm_App
         {
             CargarGrilla();
             
-            // modificarAltoDeFilasDGV(dgvListadoArticulos, 315);
+            modificarAltoDeFilasDGV(dgvListadoArticulos, 315);
             cargarFiltroAvanzado();
 
         }
@@ -52,8 +52,10 @@ namespace WinForm_App
                 artSeleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
                 FrmArticuloABM Modificar = new FrmArticuloABM(artSeleccionado,1);
                 Modificar.ShowDialog();
-                CargarGrilla();
-
+                if (Modificar.ArticuloEditado == true)
+                {
+                    CargarGrilla();
+                }
             }
 
 
@@ -138,7 +140,7 @@ namespace WinForm_App
 
         }
 
-        private void CargarGrilla()
+        public void CargarGrilla()
         { 
             ArticuloNegocio negocio = new ArticuloNegocio();
 
@@ -233,47 +235,47 @@ namespace WinForm_App
                     case "Cód Articulo":
 
                         cboFiltroAvanzadoCriterio.Items.Clear();
-                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+                        cboFiltroAvanzadoCriterio.Items.Add("Contiene");
+                        cboFiltroAvanzadoCriterio.Items.Add("Comienza con");
+                        cboFiltroAvanzadoCriterio.Items.Add("Termina con");
 
                         break;
 
                     case "Nombre":
                         cboFiltroAvanzadoCriterio.Items.Clear();
-                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+                        cboFiltroAvanzadoCriterio.Items.Add("Contiene");
+                        cboFiltroAvanzadoCriterio.Items.Add("Comienza con");
+                        cboFiltroAvanzadoCriterio.Items.Add("Termina con" );
                         break;
 
                     case "Descripción":
                         cboFiltroAvanzadoCriterio.Items.Clear();
-                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+                        cboFiltroAvanzadoCriterio.Items.Add("Contiene");
+                        cboFiltroAvanzadoCriterio.Items.Add("Comienza con");
+                        cboFiltroAvanzadoCriterio.Items.Add("Termina con");
 
                         break;
 
                     case "Marca":
                         cboFiltroAvanzadoCriterio.Items.Clear();
-                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+                        cboFiltroAvanzadoCriterio.Items.Add("Contiene");
+                        cboFiltroAvanzadoCriterio.Items.Add("Comienza con");
+                        cboFiltroAvanzadoCriterio.Items.Add("Termina con");
 
                         break;
                     case "Categoría":
                         cboFiltroAvanzadoCriterio.Items.Clear();
-                        cboFiltroAvanzadoCriterio.Items.Add(" Contiene ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Comienza con ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Termina con ");
+                        cboFiltroAvanzadoCriterio.Items.Add("Contiene");
+                        cboFiltroAvanzadoCriterio.Items.Add("Comienza con");
+                        cboFiltroAvanzadoCriterio.Items.Add("Termina con");
 
                         break;
                     case "Precio":
 
                         cboFiltroAvanzadoCriterio.Items.Clear();
-                        cboFiltroAvanzadoCriterio.Items.Add(" Mayor a ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Menor a ");
-                        cboFiltroAvanzadoCriterio.Items.Add(" Igual a ");
+                        cboFiltroAvanzadoCriterio.Items.Add("Mayor a");
+                        cboFiltroAvanzadoCriterio.Items.Add("Menor a");
+                        cboFiltroAvanzadoCriterio.Items.Add("Igual a");
 
                         break;
 
@@ -288,6 +290,28 @@ namespace WinForm_App
 
 
             }
+        }
+
+        private void btnBuscarFiltroAvanzado_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+
+            try
+            {
+                string campo = cboFiltroAvanzadoCampo.SelectedItem.ToString();
+                string criterio = cboFiltroAvanzadoCriterio.SelectedItem.ToString();
+                string filtro = txtFiltroAvanzadoValor.Text;
+                dgvListadoArticulos.DataSource = negocio.filtrarArticulos(campo, criterio, filtro);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+
+
         }
     }
 }
