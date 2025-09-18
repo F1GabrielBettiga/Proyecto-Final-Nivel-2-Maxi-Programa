@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Drawing.Text;
 
 namespace WinForm_App
 {
@@ -19,14 +20,15 @@ namespace WinForm_App
         private List<Articulo> listaArticulos;
         public FrmArticulosListado()
         {
+
             InitializeComponent();
         }
 
 
         private void FrmArticulosListado_Load(object sender, EventArgs e)
         {
+            EstiloFormulario();
             CargarGrilla();
-            
             modificarAltoDeFilasDGV(dgvListadoArticulos, 315);
             cargarFiltroAvanzado();
 
@@ -338,6 +340,8 @@ namespace WinForm_App
             dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
         }
 
+
+
         private void modificarAltoDeFilasDGV(DataGridView dgv, int altoMaximo)
         {
             int header = dgv.ColumnHeadersVisible ? dgv.ColumnHeadersHeight : 0;
@@ -413,6 +417,104 @@ namespace WinForm_App
 
                 e.Handled = true;
             }
+        }
+
+
+        //DISEÑO---------------------
+
+        private void EstiloFormulario()
+        {
+            PrivateFontCollection fuentes = new PrivateFontCollection();
+
+            // === Fondo del formulario ===
+            this.BackColor = Color.FromArgb(240, 225, 166); // Beige dorado claro
+            this.ForeColor = Color.FromArgb(31, 58, 95);    // Azul petróleo oscuro
+
+            var colorPrimario = Color.FromArgb(46, 94, 168);   // Azul primario
+            var colorPrimarioHover = Color.FromArgb(37, 76, 136);   // Hover primario
+            var colorSecundario = Color.FromArgb(246, 240, 209); // Secundario
+            var colorDanger = Color.FromArgb(192, 57, 43);   // Rojo eliminar
+            var colorDangerHover = Color.FromArgb(153, 45, 34);   // Hover eliminar
+
+            // === Tipografía ===
+            fuentes.AddFontFile(@"Fonts\FiraSans-Regular.ttf");
+            this.Font = new Font(fuentes.Families[0], 10, FontStyle.Regular);
+
+            // === Paneles / GroupBox (igual al form y sin bordes) ===
+            foreach (Control c in this.Controls)
+            {
+                if (c is GroupBox || c is Panel)
+                {
+                    c.BackColor = this.BackColor;
+                    c.ForeColor = this.ForeColor;
+                    if (c is Panel p) p.BorderStyle = BorderStyle.None;
+                }
+            }
+
+            // === DataGridView ===
+            if (dgvListadoArticulos != null)
+            {
+                var dgv = dgvListadoArticulos;
+                dgv.BackgroundColor = this.BackColor;
+                dgv.GridColor = Color.FromArgb(210, 195, 155);
+
+                dgv.EnableHeadersVisualStyles = false;
+                dgv.ColumnHeadersDefaultCellStyle.BackColor = colorPrimario;
+                dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dgv.ColumnHeadersDefaultCellStyle.Font = new Font(this.Font, FontStyle.Bold);
+
+                dgv.DefaultCellStyle.BackColor = Color.White;
+                dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(250, 245, 220);
+                dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 234, 254);
+                dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(30, 58, 95);
+            }
+
+            // === Botones ===
+            EstilizarBotonPrimario(btnAgregar, colorPrimario, colorPrimarioHover);
+            EstilizarBotonSecundario(btnModificar, colorSecundario);
+            EstilizarBotonSecundario(btnDetalles, colorSecundario);
+            EstilizarBotonDanger(btnEliminar, colorDanger, colorDangerHover);
+
+            // === PictureBox ===
+            if (pbImagenListado != null)
+            {
+                pbImagenListado.BackColor = this.BackColor; // Igual al form
+                pbImagenListado.BorderStyle = BorderStyle.None;
+            }
+        }
+
+        // Helpers para botones
+        private void EstilizarBotonPrimario(Button b, Color baseColor, Color hover)
+        {
+            if (b == null) return;
+            b.FlatStyle = FlatStyle.Flat;
+            b.FlatAppearance.BorderSize = 0;
+            b.BackColor = baseColor;
+            b.ForeColor = Color.White;
+            b.Cursor = Cursors.Hand;
+            b.MouseEnter += (_, __) => b.BackColor = hover;
+            b.MouseLeave += (_, __) => b.BackColor = baseColor;
+        }
+        private void EstilizarBotonSecundario(Button b, Color baseColor)
+        {
+            if (b == null) return;
+            b.FlatStyle = FlatStyle.Flat;
+            b.FlatAppearance.BorderSize = 1;
+            b.FlatAppearance.BorderColor = Color.FromArgb(210, 195, 155);
+            b.BackColor = baseColor;
+            b.ForeColor = Color.FromArgb(31, 58, 95);
+            b.Cursor = Cursors.Hand;
+        }
+        private void EstilizarBotonDanger(Button b, Color baseColor, Color hover)
+        {
+            if (b == null) return;
+            b.FlatStyle = FlatStyle.Flat;
+            b.FlatAppearance.BorderSize = 0;
+            b.BackColor = baseColor;
+            b.ForeColor = Color.White;
+            b.Cursor = Cursors.Hand;
+            b.MouseEnter += (_, __) => b.BackColor = hover;
+            b.MouseLeave += (_, __) => b.BackColor = baseColor;
         }
     }
 }

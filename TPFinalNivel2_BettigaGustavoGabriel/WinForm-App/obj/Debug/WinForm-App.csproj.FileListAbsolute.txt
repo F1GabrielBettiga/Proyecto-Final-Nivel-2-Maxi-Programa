@@ -28,3 +28,5 @@ C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-F
 C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.pdb
 C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\WinForm-App.exe.config
 C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\obj\Debug\WinForm-App.exe.config
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Fonts\FiraSans-Regular.ttf
+C:\Users\Gabriel\Documents\Curso Maxi Programa\Proyecto Final Nivel 2\Proyecto-Final\TPFinalNivel2_BettigaGustavoGabriel\WinForm-App\bin\Debug\Imagenes\Icono.ico

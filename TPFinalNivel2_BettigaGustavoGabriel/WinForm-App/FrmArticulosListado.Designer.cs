@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmArticulosListado));
             this.dgvListadoArticulos = new System.Windows.Forms.DataGridView();
             this.txtbFiltroRapido = new System.Windows.Forms.TextBox();
             this.lblFiltroRapido = new System.Windows.Forms.Label();
@@ -160,7 +161,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboFiltroAvanzadoCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFiltroAvanzadoCampo.FormattingEnabled = true;
-            this.cboFiltroAvanzadoCampo.Location = new System.Drawing.Point(58, 22);
+            this.cboFiltroAvanzadoCampo.Location = new System.Drawing.Point(80, 22);
             this.cboFiltroAvanzadoCampo.Name = "cboFiltroAvanzadoCampo";
             this.cboFiltroAvanzadoCampo.Size = new System.Drawing.Size(194, 21);
             this.cboFiltroAvanzadoCampo.TabIndex = 0;
@@ -173,7 +174,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboFiltroAvanzadoCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFiltroAvanzadoCriterio.FormattingEnabled = true;
-            this.cboFiltroAvanzadoCriterio.Location = new System.Drawing.Point(58, 70);
+            this.cboFiltroAvanzadoCriterio.Location = new System.Drawing.Point(80, 70);
             this.cboFiltroAvanzadoCriterio.Name = "cboFiltroAvanzadoCriterio";
             this.cboFiltroAvanzadoCriterio.Size = new System.Drawing.Size(194, 21);
             this.cboFiltroAvanzadoCriterio.TabIndex = 1;
@@ -184,7 +185,7 @@
             this.txtFiltroAvanzadoValor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFiltroAvanzadoValor.Location = new System.Drawing.Point(58, 108);
+            this.txtFiltroAvanzadoValor.Location = new System.Drawing.Point(80, 108);
             this.txtFiltroAvanzadoValor.Name = "txtFiltroAvanzadoValor";
             this.txtFiltroAvanzadoValor.Size = new System.Drawing.Size(194, 20);
             this.txtFiltroAvanzadoValor.TabIndex = 2;
@@ -197,7 +198,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFiltroAvanzado.AutoSize = true;
-            this.lblFiltroAvanzado.Location = new System.Drawing.Point(102, 6);
+            this.lblFiltroAvanzado.Location = new System.Drawing.Point(124, 6);
             this.lblFiltroAvanzado.Name = "lblFiltroAvanzado";
             this.lblFiltroAvanzado.Size = new System.Drawing.Size(80, 13);
             this.lblFiltroAvanzado.TabIndex = 3;
@@ -209,7 +210,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBuscarEn.AutoSize = true;
-            this.lblBuscarEn.Location = new System.Drawing.Point(3, 25);
+            this.lblBuscarEn.Location = new System.Drawing.Point(16, 25);
             this.lblBuscarEn.Name = "lblBuscarEn";
             this.lblBuscarEn.Size = new System.Drawing.Size(58, 13);
             this.lblBuscarEn.TabIndex = 4;
@@ -221,7 +222,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOperador.AutoSize = true;
-            this.lblOperador.Location = new System.Drawing.Point(7, 73);
+            this.lblOperador.Location = new System.Drawing.Point(20, 73);
             this.lblOperador.Name = "lblOperador";
             this.lblOperador.Size = new System.Drawing.Size(54, 13);
             this.lblOperador.TabIndex = 5;
@@ -233,7 +234,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(27, 111);
+            this.lblValor.Location = new System.Drawing.Point(40, 108);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(34, 13);
             this.lblValor.TabIndex = 6;
@@ -249,9 +250,9 @@
             this.pnlFiltroAvanzado.Controls.Add(this.txtFiltroAvanzadoValor);
             this.pnlFiltroAvanzado.Controls.Add(this.lblBuscarEn);
             this.pnlFiltroAvanzado.Controls.Add(this.lblFiltroAvanzado);
-            this.pnlFiltroAvanzado.Location = new System.Drawing.Point(538, 369);
+            this.pnlFiltroAvanzado.Location = new System.Drawing.Point(494, 369);
             this.pnlFiltroAvanzado.Name = "pnlFiltroAvanzado";
-            this.pnlFiltroAvanzado.Size = new System.Drawing.Size(273, 166);
+            this.pnlFiltroAvanzado.Size = new System.Drawing.Size(317, 166);
             this.pnlFiltroAvanzado.TabIndex = 2;
             // 
             // btnBuscarFiltroAvanzado
@@ -296,6 +297,7 @@
             this.Controls.Add(this.pnlFiltroAvanzado);
             this.Controls.Add(this.pbImagenListado);
             this.Controls.Add(this.dgvListadoArticulos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmArticulosListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Articulos";

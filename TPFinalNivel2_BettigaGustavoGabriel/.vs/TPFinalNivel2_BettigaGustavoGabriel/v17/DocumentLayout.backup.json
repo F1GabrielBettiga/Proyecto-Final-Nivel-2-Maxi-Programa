@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\winform-app\\frmarticuloabm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\frmarticuloabm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\winform-app\\frmarticuloabm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\frmarticuloabm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3745844-390A-4ECE-B255-80B78A38CD70}|Dominio\\Dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\winform-app\\frmarticuloslistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\frmarticuloslistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\winform-app\\frmarticuloslistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\frmarticuloslistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\winform-app\\frmarticuloslistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\frmarticuloslistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|c:\\users\\gabriel\\documents\\curso maxi programa\\proyecto final nivel 2\\proyecto-final\\tpfinalnivel2_bettigagustavogabriel\\winform-app\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D86540F8-D0A7-4F52-85F9-8835A5400070}|WinForm-App\\WinForm-App.csproj|solutionrelative:winform-app\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E61696F9-9932-4E3C-BFE6-6593D9E4DE52}|Negocio\\Negocio.csproj|C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E61696F9-9932-4E3C-BFE6-6593D9E4DE52}|Negocio\\Negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E61696F9-9932-4E3C-BFE6-6593D9E4DE52}|Negocio\\Negocio.csproj|C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E61696F9-9932-4E3C-BFE6-6593D9E4DE52}|Negocio\\Negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,104 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmArticuloABM.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticuloABM.cs",
-              "RelativeDocumentMoniker": "WinForm-App\\FrmArticuloABM.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticuloABM.cs",
-              "RelativeToolTip": "WinForm-App\\FrmArticuloABM.cs",
-              "ViewState": "AgIAAEYBAAAAAAAAAAAiwFgBAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T19:57:20.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Articulo.cs",
-              "RelativeDocumentMoniker": "Dominio\\Articulo.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Dominio\\Articulo.cs",
-              "RelativeToolTip": "Dominio\\Articulo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T19:02:02.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\App.config",
-              "RelativeDocumentMoniker": "WinForm-App\\App.config",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\App.config",
-              "RelativeToolTip": "WinForm-App\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-18T18:13:07.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmArticuloABM.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticuloABM.cs",
-              "RelativeDocumentMoniker": "WinForm-App\\FrmArticuloABM.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticuloABM.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinForm-App\\FrmArticuloABM.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T23:01:39.539Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmArticulosListado.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticulosListado.cs",
-              "RelativeDocumentMoniker": "WinForm-App\\FrmArticulosListado.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticulosListado.cs",
-              "RelativeToolTip": "WinForm-App\\FrmArticulosListado.cs",
-              "ViewState": "AgIAAHkBAAAAAAAAAAAnwI8BAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T02:49:14.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ArticuloNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Negocio\\ArticuloNegocio.cs",
-              "RelativeDocumentMoniker": "Negocio\\ArticuloNegocio.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Negocio\\ArticuloNegocio.cs",
-              "RelativeToolTip": "Negocio\\ArticuloNegocio.cs",
-              "ViewState": "AgIAAP0AAAAAAAAAAAAowHIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T00:02:23.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Negocio\\AccesoDatos.cs",
-              "RelativeDocumentMoniker": "Negocio\\AccesoDatos.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\Negocio\\AccesoDatos.cs",
-              "RelativeToolTip": "Negocio\\AccesoDatos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T22:26:57.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "FrmArticulosListado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticulosListado.cs",
               "RelativeDocumentMoniker": "WinForm-App\\FrmArticulosListado.cs",
               "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticulosListado.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinForm-App\\FrmArticulosListado.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:50:08.769Z",
+              "WhenOpened": "2025-09-18T21:33:13.586Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmArticulosListado.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticulosListado.cs",
+              "RelativeDocumentMoniker": "WinForm-App\\FrmArticulosListado.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Documents\\Curso Maxi Programa\\Proyecto Final Nivel 2\\Proyecto-Final\\TPFinalNivel2_BettigaGustavoGabriel\\WinForm-App\\FrmArticulosListado.cs",
+              "RelativeToolTip": "WinForm-App\\FrmArticulosListado.cs",
+              "ViewState": "AgIAAFgBAAAAAAAAAAAUwK8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T02:49:14.291Z"
             }
           ]
         }
