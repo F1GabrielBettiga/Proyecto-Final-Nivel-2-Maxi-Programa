@@ -21,20 +21,26 @@ namespace WinForm_App
         public FrmArticuloABM()
         {
             InitializeComponent();
+            inicializarValidadores();
+
+
         }
 
         public FrmArticuloABM(Articulo ar, int Modo)
         {
+            InitializeComponent();
+            inicializarValidadores();
+
             if (Modo == 1)
             {
-                InitializeComponent();
+
                 art = ar;
                 Text = "Modificar Artículo";
-              
+
             }
             else
             {
-                InitializeComponent();
+
                 art = ar;
                 Text = "Detalle de Artículo";
                 btnGuardar.Visible = false;
@@ -46,7 +52,7 @@ namespace WinForm_App
                 cbMarca.Enabled = false;
                 cbCategoria.Enabled = false;
                 btnCancelar.Text = "Cerrar";
-                
+
             }
         }
 
@@ -83,7 +89,27 @@ namespace WinForm_App
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
-        {   ArticuloNegocio negocio = new ArticuloNegocio();
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+
+            if (validarCampos() == 1)
+            {
+                lblvalMensage.Text = "Por favor, complete los campos obligatorios.";
+                lblvalMensage.ForeColor = Color.Red;
+                return;
+            }
+            else if (validarCampos() == 2)
+            {
+                lblvalMensage.Text = "Por favor, ingrese un precio válido.";
+                lblValPrecio.ForeColor = Color.Red;
+                return;
+            }
+            else
+            {
+                lblvalMensage.Text = "";
+            }
+
+
 
             try
             {
@@ -101,10 +127,11 @@ namespace WinForm_App
 
                 if (art.id != 0)
                 {
-                    DialogResult result = MessageBox.Show("¿Está seguro que desea editar el articulo " + art.nombre+ "?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                    DialogResult result = MessageBox.Show("¿Está seguro que desea editar el articulo " + art.nombre + "?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         negocio.modificarArticulo(art);
+
                         MessageBox.Show("Modificado Exitosamente ");
                         ArticuloEditado = true;
 
@@ -116,9 +143,10 @@ namespace WinForm_App
                 else
                 {
                     negocio.agregarArticulo(art);
+
                     MessageBox.Show("Agregado Exitosamente");
                     Close();
-                    
+
 
                 }
 
@@ -146,12 +174,12 @@ namespace WinForm_App
                 //Si viene un id, es porque se esta modificando
                 articulo.id = id;
             }
-   
+
             articulo.codigo = txtCodigo.Text;
             articulo.nombre = txtNombre.Text;
             articulo.descripcion = txtDescripcion.Text;
-            articulo.marca = (Marca) cbMarca.SelectedItem;
-            articulo.categoria= (Categoria) cbCategoria.SelectedItem;
+            articulo.marca = (Marca)cbMarca.SelectedItem;
+            articulo.categoria = (Categoria)cbCategoria.SelectedItem;
             articulo.imagenUrl = txtUrlImagen.Text;
             articulo.precio = decimal.Parse(txtPrecio.Text);
             return articulo;
@@ -163,12 +191,12 @@ namespace WinForm_App
             try
             {
                 pbImagenABM.Load(imagen);
-                
+
             }
             catch (Exception)
             {
                 pbImagenABM.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
-                
+
             }
 
         }
@@ -178,11 +206,70 @@ namespace WinForm_App
             cargarImagen(txtUrlImagen.Text);
         }
 
-        private void colocarSimbolodeMoneda()
+        private int validarCampos()
         {
+            if (string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtDescripcion.Text) || string.IsNullOrEmpty(txtPrecio.Text))
+            {
+                if (string.IsNullOrEmpty(txtCodigo.Text))
+                {
+                    lblValCodigo.Text = "*";
+                    lblValCodigo.ForeColor = Color.Red;
+                }
+                else
+                { lblValCodigo.Text = ""; }
+
+                if (string.IsNullOrEmpty(txtNombre.Text))
+                {
+                    lblValNombre.Text = "*";
+                    lblValNombre.ForeColor = Color.Red;
+                }
+                else
+                { lblValNombre.Text = ""; }
+
+                if (string.IsNullOrEmpty(txtDescripcion.Text))
+                {
+                    lblValDescripcion.Text = "*";
+                    lblValDescripcion.ForeColor = Color.Red;
+                }
+                else
+                { lblValDescripcion.Text = ""; }
+
+                if (string.IsNullOrEmpty(txtPrecio.Text))
+                {
+                    lblValPrecio.Text = "*";
+                    lblValPrecio.ForeColor = Color.Red;
+                }
+                else
+                { lblValPrecio.Text = ""; }
+
+
+                return 1;
+            }
+            else if (!decimal.TryParse(txtPrecio.Text, out decimal precio) || precio < 0)
+            {
+
+                return 2;
+            }
+            else
+            {
+
+                return 3;
+
+            }
 
         }
 
+        void inicializarValidadores()
+        {
+            lblValCodigo.Text = "";
+            lblValNombre.Text = "";
+            lblValDescripcion.Text = "";
+            lblValPrecio.Text = "";
+            lblvalMensage.Text = "";
+        }
+    }
+
 
     }
-}
+
+
