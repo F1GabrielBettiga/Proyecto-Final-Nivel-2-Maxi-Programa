@@ -3,18 +3,23 @@ using Negocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WinForm_App
 {
     public partial class FrmArticuloABM : Form
     {
         private Articulo art = null;
+
+        private OpenFileDialog archivo = null;
         public bool ArticuloEditado { get; private set; }
 
 
@@ -130,6 +135,12 @@ namespace WinForm_App
                     DialogResult result = MessageBox.Show("¿Está seguro que desea editar el articulo " + art.nombre + "?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
+                        if (archivo != null && !(txtUrlImagen.Text.ToUpper().Contains("HTTP")))
+                        {
+                            guardarIamgenLocal(Path.GetFileName(archivo.FileName), art.nombre);
+                            art.imagenUrl = Path.Combine(ConfigurationManager.AppSettings["CATALOGO_DB_IMAGENES"], art.nombre + "_" + Path.GetFileName(archivo.FileName));
+                        }
+
                         negocio.modificarArticulo(art);
 
                         MessageBox.Show("Modificado Exitosamente ");
@@ -137,18 +148,27 @@ namespace WinForm_App
 
                     }
 
-                    Close();
+                   
 
                 }
                 else
                 {
+
+                    if (archivo != null && !(txtUrlImagen.Text.ToUpper().Contains("HTTP")))
+                    {
+                        guardarIamgenLocal(Path.GetFileName(archivo.FileName), art.nombre);
+                        art.imagenUrl = Path.Combine(ConfigurationManager.AppSettings["CATALOGO_DB_IMAGENES"], art.nombre + "_" + Path.GetFileName(archivo.FileName));
+                    }
                     negocio.agregarArticulo(art);
 
                     MessageBox.Show("Agregado Exitosamente");
-                    Close();
+                    
 
 
                 }
+
+
+                Close();
 
 
             }
@@ -322,7 +342,7 @@ namespace WinForm_App
 
                 e.Handled = true; // todo lo demás se bloquea
             }
-            else if (campo == "txtCodigo")
+            else if (campo == "txtCodigo" || campo == "txtNombre")
             {
                 // letras y números
                 if (char.IsLetterOrDigit(e.KeyChar))
@@ -343,10 +363,26 @@ namespace WinForm_App
 
         }
 
+        private void btnAgregarImagen_Click(object sender, EventArgs e)
+        {
+            archivo = new OpenFileDialog();
+            archivo.Filter = "jpg|*.jpg;|png|*.png;|jpeg|*.jpeg";
+            if (archivo.ShowDialog() == DialogResult.OK)
+            {
 
+                txtUrlImagen.Text = archivo.FileName;                
+                cargarImagen(archivo.FileName);                      
+            }
+        }
+
+        private void guardarIamgenLocal(string nombreArchivo, string nombreArticulo)
+        {
+            File.Copy(archivo.FileName,Path.Combine(ConfigurationManager.AppSettings["CATALOGO_DB_IMAGENES"], nombreArticulo + "_" + nombreArchivo),true);// habilita sobrescribir duplicados
+
+        }
     }
 
 
-    }
+}
 
 

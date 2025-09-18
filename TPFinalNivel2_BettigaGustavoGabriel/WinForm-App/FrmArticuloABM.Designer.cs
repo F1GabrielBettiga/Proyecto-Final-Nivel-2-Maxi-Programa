@@ -51,6 +51,7 @@
             this.lblValDescripcion = new System.Windows.Forms.Label();
             this.lblValNombre = new System.Windows.Forms.Label();
             this.lblValCodigo = new System.Windows.Forms.Label();
+            this.btnAgregarImagen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenABM)).BeginInit();
             this.pnlDatosArticulo.SuspendLayout();
             this.SuspendLayout();
@@ -212,6 +213,7 @@
             this.pnlDatosArticulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlDatosArticulo.Controls.Add(this.btnAgregarImagen);
             this.pnlDatosArticulo.Controls.Add(this.lblvalMensage);
             this.pnlDatosArticulo.Controls.Add(this.lblValPrecio);
             this.pnlDatosArticulo.Controls.Add(this.lblValDescripcion);
@@ -284,6 +286,16 @@
             this.lblValCodigo.TabIndex = 17;
             this.lblValCodigo.Text = "*";
             // 
+            // btnAgregarImagen
+            // 
+            this.btnAgregarImagen.Location = new System.Drawing.Point(257, 167);
+            this.btnAgregarImagen.Name = "btnAgregarImagen";
+            this.btnAgregarImagen.Size = new System.Drawing.Size(27, 22);
+            this.btnAgregarImagen.TabIndex = 23;
+            this.btnAgregarImagen.Text = "+";
+            this.btnAgregarImagen.UseVisualStyleBackColor = true;
+            this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
+            // 
             // FrmArticuloABM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,5 +338,6 @@
         private System.Windows.Forms.Label lblValDescripcion;
         private System.Windows.Forms.Label lblValNombre;
         private System.Windows.Forms.Label lblValCodigo;
+        private System.Windows.Forms.Button btnAgregarImagen;
     }
 }

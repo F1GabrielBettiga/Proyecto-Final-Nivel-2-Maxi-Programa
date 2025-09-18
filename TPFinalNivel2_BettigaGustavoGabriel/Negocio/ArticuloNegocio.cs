@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominio;
+using System.IO;
 
 namespace Negocio
 {
@@ -101,15 +102,18 @@ namespace Negocio
 		}
 
 
-		public void eliminarArticulo(int id)
+		public void eliminarArticulo(Articulo art)
 		{
 			AccesoDatos datos = new AccesoDatos();
 			try
 			{
 				datos.setearConsulta("Delete from ARTICULOS where Id = @Id");
-				datos.setearParametro("@Id", id);
+				datos.setearParametro("@Id", art.id);
 				datos.ejecutarAccion();
+
                 
+            
+
             }
 			catch (Exception ex)
 			{

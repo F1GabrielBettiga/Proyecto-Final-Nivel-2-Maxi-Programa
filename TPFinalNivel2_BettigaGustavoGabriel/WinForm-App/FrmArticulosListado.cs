@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WinForm_App
 {
@@ -78,7 +79,12 @@ namespace WinForm_App
                 DialogResult result = MessageBox.Show("¿Está seguro que desea eliminar el artículo? " + artSeleccionado.nombre,"Eliminando", MessageBoxButtons.YesNo,MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 if (result == DialogResult.Yes)
                 {
-                    negocio.eliminarArticulo(artSeleccionado.id);
+                    
+                        pbImagenListado.Image.Dispose();   // libera el handle del archivo para que no salte al caso de que la imagen esté en uso
+                        pbImagenListado.Image = null;
+                        pbImagenListado.ImageLocation = null; 
+                    
+                    negocio.eliminarArticulo(artSeleccionado);
                     MessageBox.Show("Eliminido Correctamente");
                     CargarGrilla();
 
@@ -309,20 +315,22 @@ namespace WinForm_App
         }
 
         private void cargarImagen(string imagen)
-        {
-            try
-            {
-                
-                pbImagenListado.Load(imagen);
-              
-            }
-            catch (Exception)
-            {
-                pbImagenListado.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
-             
-            }
-        
-        }
+         {
+             try
+             {
+
+                 pbImagenListado.Load(imagen);
+
+             }
+             catch (Exception)
+             {
+                 pbImagenListado.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+
+             }
+
+         }
+
+ 
 
         private void ocultarColumnas()
         {
@@ -389,7 +397,7 @@ namespace WinForm_App
 
                 e.Handled = true; // todo lo demás se bloquea
             }
-            else if (campo == "Cód Articulo")
+            else if (campo == "Cód Articulo" || campo == "Nombre")
             {
                 // letras y números
                 if (char.IsLetterOrDigit(e.KeyChar))
