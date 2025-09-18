@@ -165,6 +165,27 @@ namespace WinForm_App
             Close();
         }
 
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarEntradas(sender, e, "txtCodigo");
+
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarEntradas(sender, e, "txtNombre");
+        }
+
+        private void txtDescripcion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarEntradas(sender, e, "txtDescripcion");
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarEntradas(sender, e, "txtPrecio");
+        }
+
         private Articulo cargarArticulo(int id = -1)
         {
             Articulo articulo = new Articulo();
@@ -247,11 +268,20 @@ namespace WinForm_App
             }
             else if (!decimal.TryParse(txtPrecio.Text, out decimal precio) || precio < 0)
             {
+                lblValCodigo.Text = "";
+                lblValNombre.Text = "";
+                lblValDescripcion.Text = "";
+                
+
 
                 return 2;
             }
             else
             {
+                lblValCodigo.Text = "";
+                lblValNombre.Text = "";
+                lblValDescripcion.Text = "";
+                lblValPrecio.Text = "";
 
                 return 3;
 
@@ -267,6 +297,53 @@ namespace WinForm_App
             lblValPrecio.Text = "";
             lblvalMensage.Text = "";
         }
+
+        void validarEntradas (object sender, KeyPressEventArgs e, string campo)
+        {
+            // teclas de control (ej: Backspace)
+            if (char.IsControl(e.KeyChar))
+                return;
+
+            //string campo = (cboFiltroAvanzadoCampo.SelectedItem ?? "").ToString().Trim();
+            var tb = (TextBox)sender;
+            char sep = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator[0];
+
+            if (campo == "txtPrecio")
+            {
+                //SOLO NÚMEROS 
+                if (char.IsDigit(e.KeyChar))
+                    return;
+
+                if (e.KeyChar == '.' || e.KeyChar == ',' || e.KeyChar == sep)
+                {
+                    if (!tb.Text.Contains('.') && !tb.Text.Contains(',') && !tb.Text.Contains(sep))
+                        return;
+                }
+
+                e.Handled = true; // todo lo demás se bloquea
+            }
+            else if (campo == "txtCodigo")
+            {
+                // letras y números
+                if (char.IsLetterOrDigit(e.KeyChar))
+                    return;
+
+                e.Handled = true; // bloqueo símbolos y otros
+            }
+            else
+            {
+                // SOLO LETRAS
+                if (char.IsLetter(e.KeyChar) || char.IsWhiteSpace(e.KeyChar))
+                    return;
+
+                e.Handled = true;
+            }
+
+
+
+        }
+
+
     }
 
 
