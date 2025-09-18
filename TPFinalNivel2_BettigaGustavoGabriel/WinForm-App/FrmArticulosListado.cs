@@ -128,6 +128,10 @@ namespace WinForm_App
             if (filtro != "")
             {
                 listaFiltrada = listaArticulos.FindAll(x => x.nombre.ToUpper().Contains(filtro.ToUpper()) || x.codigo.ToUpper().Contains(filtro.ToUpper()) || x.descripcion.ToUpper().Contains(filtro.ToUpper()) || x.marca.id.ToString().ToUpper().Contains(filtro.ToUpper()) || x.marca.descripcion.ToUpper().Contains(filtro.ToUpper()) || x.categoria.id.ToString().ToUpper().Contains(filtro.ToUpper()) || x.categoria.descripcion.ToUpper().Contains(filtro.ToUpper()) || x.precio.ToString().ToString().ToUpper().Contains(filtro.ToUpper()));
+                txtFiltroAvanzadoValor.Text = string.Empty;
+                cboFiltroAvanzadoCriterio.Items.Clear();
+                cboFiltroAvanzadoCampo.Items.Clear();
+                cargarFiltroAvanzado();
             }
             else
             {
@@ -140,86 +144,11 @@ namespace WinForm_App
 
         }
 
-        public void CargarGrilla()
-        { 
-            ArticuloNegocio negocio = new ArticuloNegocio();
-
-            try
-            {
-                listaArticulos = negocio.listarTodosLosArticulos();
-
-                dgvListadoArticulos.DataSource = listaArticulos;
-
-                if (dgvListadoArticulos.Rows.Count > 0)
-                {
-                    dgvListadoArticulos.Rows[0].Cells[1].Selected = true;
-
-                }
-
-                ocultarColumnas();
-                
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.ToString());
-            }
-
-
-        }
-
-        private void cargarImagen(string imagen)
-        {
-            try
-            {
-                
-                pbImagenListado.Load(imagen);
-              
-            }
-            catch (Exception)
-            {
-                pbImagenListado.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
-             
-            }
-        
-        }
-
-        private void ocultarColumnas()
-        {
-            dgvListadoArticulos.Columns["Id"].Visible = false;
-            dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
-        }
-
-        private void modificarAltoDeFilasDGV(DataGridView dgv, int altoMaximo)
-        {
-            int header = dgv.ColumnHeadersVisible ? dgv.ColumnHeadersHeight : 0;
-            int borders = dgv.Height - dgv.ClientSize.Height;
-            int altoFila = dgv.RowTemplate.Height;
-
-            // Calcular alto en base a filas cargadas
-            int filas = dgv.Rows.Count;
-            int altoDeseado = header + (filas * altoFila) + borders;
-
-            // Asignar el alto, respetando el máximo
-            dgv.Height = Math.Min(altoDeseado, altoMaximo);
-        }
-
-
-
-        private void cargarFiltroAvanzado()
-        { 
-            cboFiltroAvanzadoCampo.Items.Add("Cód Articulo");
-            cboFiltroAvanzadoCampo.Items.Add("Nombre");
-            cboFiltroAvanzadoCampo.Items.Add("Descripción");
-            cboFiltroAvanzadoCampo.Items.Add("Marca");
-            cboFiltroAvanzadoCampo.Items.Add("Categoría");
-            cboFiltroAvanzadoCampo.Items.Add("Precio");
-
-
-        }
-
         private void cboFiltroAvanzadoCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            txtFiltroAvanzadoValor.Enabled = false;
+            txtFiltroAvanzadoValor.Text = string.Empty;
+
             if (cboFiltroAvanzadoCampo.SelectedIndex < 0)
             {
                 MessageBox.Show("Primero selecciona un campo");
@@ -229,6 +158,8 @@ namespace WinForm_App
             else
             {
                 string opcion = cboFiltroAvanzadoCampo.SelectedItem.ToString();
+                txtbFiltroRapido.Text = string.Empty;
+                cboFiltroAvanzadoCriterio.Enabled = true;
 
                 switch (opcion)
                 {
@@ -245,7 +176,7 @@ namespace WinForm_App
                         cboFiltroAvanzadoCriterio.Items.Clear();
                         cboFiltroAvanzadoCriterio.Items.Add("Contiene");
                         cboFiltroAvanzadoCriterio.Items.Add("Comienza con");
-                        cboFiltroAvanzadoCriterio.Items.Add("Termina con" );
+                        cboFiltroAvanzadoCriterio.Items.Add("Termina con");
                         break;
 
                     case "Descripción":
@@ -312,6 +243,168 @@ namespace WinForm_App
 
 
 
+        }
+
+        private void cboFiltroAvanzadoCriterio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (cboFiltroAvanzadoCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Primero selecciona un campo");
+                cboFiltroAvanzadoCriterio.SelectedIndex = -1;
+                return;
+            }
+            else
+            {
+                txtFiltroAvanzadoValor.Text = string.Empty;
+                txtFiltroAvanzadoValor.Enabled = true;
+
+            }
+        }
+
+        private void txtFiltroAvanzadoValor_TextChanged(object sender, EventArgs e)
+        {
+            string filtro = txtFiltroAvanzadoValor.Text;
+            if (filtro != "")
+            {
+                btnBuscarFiltroAvanzado.Enabled = true;
+            }
+            else
+            {
+                btnBuscarFiltroAvanzado.Enabled = false;
+            }
+
+
+
+        }
+
+        public void CargarGrilla()
+        { 
+            ArticuloNegocio negocio = new ArticuloNegocio();
+
+            try
+            {
+                listaArticulos = negocio.listarTodosLosArticulos();
+
+                dgvListadoArticulos.DataSource = listaArticulos;
+                colocarSimbolodeMoneda();
+
+
+                if (dgvListadoArticulos.Rows.Count > 0)
+                {
+                    dgvListadoArticulos.Rows[0].Cells[1].Selected = true;
+
+                }
+
+                ocultarColumnas();
+                
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+
+        }
+
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+                
+                pbImagenListado.Load(imagen);
+              
+            }
+            catch (Exception)
+            {
+                pbImagenListado.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+             
+            }
+        
+        }
+
+        private void ocultarColumnas()
+        {
+            dgvListadoArticulos.Columns["Id"].Visible = false;
+            dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
+        }
+
+        private void modificarAltoDeFilasDGV(DataGridView dgv, int altoMaximo)
+        {
+            int header = dgv.ColumnHeadersVisible ? dgv.ColumnHeadersHeight : 0;
+            int borders = dgv.Height - dgv.ClientSize.Height;
+            int altoFila = dgv.RowTemplate.Height;
+
+            // Calcular alto en base a filas cargadas
+            int filas = dgv.Rows.Count;
+            int altoDeseado = header + (filas * altoFila) + borders;
+
+            // Asignar el alto, respetando el máximo
+            dgv.Height = Math.Min(altoDeseado, altoMaximo);
+        }
+
+        private void colocarSimbolodeMoneda()
+        {
+            dgvListadoArticulos.Columns["precio"].DefaultCellStyle.Format = "C2";
+            dgvListadoArticulos.Columns["precio"].DefaultCellStyle.FormatProvider =
+                new System.Globalization.CultureInfo("es-AR");
+        }
+        private void cargarFiltroAvanzado()
+        {
+            cboFiltroAvanzadoCriterio.Enabled = false;
+            txtFiltroAvanzadoValor.Enabled = false;
+            btnBuscarFiltroAvanzado.Enabled = false;
+            cboFiltroAvanzadoCampo.Items.Add("Cód Articulo");
+            cboFiltroAvanzadoCampo.Items.Add("Nombre");
+            cboFiltroAvanzadoCampo.Items.Add("Descripción");
+            cboFiltroAvanzadoCampo.Items.Add("Marca");
+            cboFiltroAvanzadoCampo.Items.Add("Categoría");
+            cboFiltroAvanzadoCampo.Items.Add("Precio");
+
+
+        }
+
+        private void txtFiltroAvanzadoValor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // teclas de control (ej: Backspace)
+            if (char.IsControl(e.KeyChar))
+                return;
+
+            string campo = (cboFiltroAvanzadoCampo.SelectedItem ?? "").ToString().Trim();
+            var tb = (TextBox)sender;
+            char sep = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator[0];
+
+            if (campo == "Precio")
+            {
+                //SOLO NÚMEROS 
+                if (char.IsDigit(e.KeyChar))
+                    return;
+
+                if (e.KeyChar == '.' || e.KeyChar == ',' || e.KeyChar == sep)
+                {
+                    if (!tb.Text.Contains('.') && !tb.Text.Contains(',') && !tb.Text.Contains(sep))
+                        return;
+                }
+
+                e.Handled = true; // todo lo demás se bloquea
+            }
+            else if (campo == "Cód Articulo")
+            {
+                // letras y números
+                if (char.IsLetterOrDigit(e.KeyChar))
+                    return;
+
+                e.Handled = true; // bloqueo símbolos y otros
+            }
+            else
+            {
+                // SOLO LETRAS
+                if (char.IsLetter(e.KeyChar) || char.IsWhiteSpace(e.KeyChar))
+                    return;
+
+                e.Handled = true;
+            }
         }
     }
 }

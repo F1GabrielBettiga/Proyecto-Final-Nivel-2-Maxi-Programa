@@ -16,6 +16,8 @@ namespace WinForm_App
     {
         private Articulo art = null;
         public bool ArticuloEditado { get; private set; }
+
+
         public FrmArticuloABM()
         {
             InitializeComponent();
@@ -69,7 +71,7 @@ namespace WinForm_App
                 txtDescripcion.Text = art.descripcion;
                 txtUrlImagen.Text = art.imagenUrl;
                 cargarImagen(art.imagenUrl);
-                txtPrecio.Text = art.precio.ToString();
+                txtPrecio.Text = art.precio.ToString("N2");
                 cbMarca.SelectedValue = art.marca.id;
                 cbCategoria.SelectedValue = art.categoria.id;
 
@@ -99,9 +101,15 @@ namespace WinForm_App
 
                 if (art.id != 0)
                 {
-                    negocio.modificarArticulo(art);
-                    MessageBox.Show("Modificado Exitosamente ");
-                    ArticuloEditado = true;
+                    DialogResult result = MessageBox.Show("¿Está seguro que desea editar el articulo " + art.nombre+ "?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                    if (result == DialogResult.Yes)
+                    {
+                        negocio.modificarArticulo(art);
+                        MessageBox.Show("Modificado Exitosamente ");
+                        ArticuloEditado = true;
+
+                    }
+
                     Close();
 
                 }
@@ -170,7 +178,10 @@ namespace WinForm_App
             cargarImagen(txtUrlImagen.Text);
         }
 
+        private void colocarSimbolodeMoneda()
+        {
 
+        }
 
 
     }
